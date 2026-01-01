@@ -10,10 +10,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Pierce-Ma"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Pierce-Ma/ai-rag-knowledge.git",
+    "accountId": "b808f03a-6ea7-4bfe-b3f6-d0fc802eb671"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+        <option name="userSettingsFile" value="$USER_HOME$/Downloads/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -31,21 +58,41 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.docker-compose-environment-aliyun.yml.ollama: Compose 部署.executor": "Run",
+    "Docker.docker-compose-environment.yml.ollama: Compose 部署.executor": "Run",
     "Maven.ai-rag-knowledge [clean].executor": "Run",
+    "Maven.ai-rag-knowledge [compile].executor": "Run",
+    "Maven.xfg-dev-tech-api [clean].executor": "Run",
+    "Maven.xfg-dev-tech-api [compile].executor": "Run",
+    "Maven.xfg-dev-tech-app [clean].executor": "Run",
+    "Maven.xfg-dev-tech-app [compile].executor": "Run",
     "Maven.xfg-dev-tech-trigger [clean].executor": "Run",
+    "Maven.xfg-dev-tech-trigger [compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/pipchief/KnowledgePlanet/ai-rag-knowledge/ai-rag-knowledge/docs/dev-ops",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/pipchief/KnowledgePlanet/ai-rag-knowledge/ai-rag-knowledge/xfg-dev-tech-trigger/src/main/java/cn/bugstack/Main.java",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/dev-ops" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/dev-ops" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.dev-ops/docker-compose-environment-aliyun.yml.ollama: Compose 部署">
     <configuration name="AiRagKnowledgeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ai-rag-knowledge" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="bugstack.AiRagKnowledgeApplication" />
@@ -53,6 +100,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev-ops/docker-compose-environment-aliyun.yml.ollama: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="ollama" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment-aliyun.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev-ops/docker-compose-environment.yml.ollama: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="ollama" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.dev-ops/docker-compose-environment-aliyun.yml.ollama: Compose 部署" />
+        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.ollama: Compose 部署" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -71,6 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1766402583762</updated>
       <workItem from="1766402584894" duration="320000" />
+      <workItem from="1766586383761" duration="4387000" />
     </task>
     <servers />
   </component>
