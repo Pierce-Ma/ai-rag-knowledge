@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07f3307b-2612-4cc2-9de3-da670ee6b52c" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-api/src/main/java/cn/bugstack/xfg/dev/tech/api/IAiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/OllamaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/RedisClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/RedisClientConfigProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-trigger/src/main/java/cn/bugstack/xfg/dev/tech/trigger/http/OllamaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-trigger/pom.xml" afterDir="false" />
+    <list default="true" id="07f3307b-2612-4cc2-9de3-da670ee6b52c" name="更改" comment="“Introduce AI service into this project,now it could respond in stream mode&quot;">
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/ai-case-04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-trigger/src/main/java/cn/bugstack/xfg/dev/tech/trigger/http/OllamaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-trigger/src/main/java/cn/bugstack/xfg/dev/tech/trigger/http/OllamaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +49,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -92,10 +82,10 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "3-stream-api",
+    "git-widget-placeholder": "4-frontend__page",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/pipchief/KnowledgePlanet/ai-rag-knowledge/ai-rag-knowledge/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config",
+    "last_opened_file_path": "/Users/pipchief/KnowledgePlanet/ai-rag-knowledge/ai-rag-knowledge/docs/dev-ops/nginx/html",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,6 +98,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/dev-ops/nginx/html" />
       <recent name="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config" />
       <recent name="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources" />
       <recent name="$PROJECT_DIR$/docs/dev-ops" />
@@ -197,8 +188,17 @@
       <updated>1766402583762</updated>
       <workItem from="1766402584894" duration="320000" />
       <workItem from="1766586383761" duration="4387000" />
-      <workItem from="1767283284134" duration="4267000" />
+      <workItem from="1767283284134" duration="6812000" />
     </task>
+    <task id="LOCAL-00001" summary="“Introduce AI service into this project,now it could respond in stream mode&quot;">
+      <option name="closed" value="true" />
+      <created>1767289887499</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1767289887499</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +214,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="“Introduce AI service into this project,now it could respond in stream mode&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="“Introduce AI service into this project,now it could respond in stream mode&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

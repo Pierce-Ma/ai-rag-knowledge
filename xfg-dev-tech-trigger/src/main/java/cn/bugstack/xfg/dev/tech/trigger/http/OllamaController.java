@@ -7,6 +7,7 @@ import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.ollama.OllamaChatClient;
 import org.springframework.ai.ollama.api.OllamaOptions;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 
@@ -70,7 +71,8 @@ public class OllamaController implements IAiService {
     public ChatResponse generate(@RequestParam String model, @RequestParam String message) {
         return chatClient.call(new Prompt(message, OllamaOptions.create().withModel(model)));
     }
-    @RequestMapping(value = "generate_stream",method = RequestMethod.GET)
+    
+    @RequestMapping(value = "generate_stream", method = RequestMethod.GET, produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     @Override
     public Flux<ChatResponse> generateStream(@RequestParam String model, @RequestParam String message) {
         return chatClient.stream(new Prompt(message, OllamaOptions.create().withModel(model)));
