@@ -45,7 +45,7 @@ public class RAGController implements IRAGService {
                 .build();
     }
 
-    @RequestMapping(value = "file/upload",method = RequestMethod.POST,headers = "content-type = multipart/form-data")
+    @PostMapping(value = "file/upload")
     @Override
     // 1. 定义接口
     // @RequestParam String ragTag: 接收前端传来的标签，比如 "Java教程"

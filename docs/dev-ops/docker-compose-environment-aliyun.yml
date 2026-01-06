@@ -13,6 +13,13 @@ services:
     restart: unless-stopped
     ports:
       - "11434:11434"
+    # 增加内存限制，确保 embedding 模型可以正常运行
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
     networks:
       - my-network
 
@@ -66,6 +73,9 @@ services:
       - POSTGRES_DB=ai-rag-knowledge
       - PGPASSWORD=postgres
     volumes:
+      # 持久化 PostgreSQL 数据目录（重要：确保数据不丢失）
+      - pgvector_data:/var/lib/postgresql/data
+      # 初始化 SQL 脚本
       - ./pgvector/sql/init.sql:/docker-entrypoint-initdb.d/init.sql
     logging:
       options:
@@ -81,6 +91,7 @@ services:
     networks:
       - my-network
       
+
   # pg 管理工具
   pgadmin:
     image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/pgadmin4:9.1.0
@@ -95,6 +106,11 @@ services:
       - vector_db
     networks:
       - my-network
+
+volumes:
+  # PostgreSQL 数据持久化卷
+  pgvector_data:
+    driver: local
 
 networks:
   my-network:

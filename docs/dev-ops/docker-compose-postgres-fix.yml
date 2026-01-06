@@ -1,0 +1,24 @@
+# 这是一个辅助服务，用于在 vector_db 启动后自动重置密码
+# 使用方法: docker-compose -f docker-compose-environment-aliyun.yml -f docker-compose-postgres-fix.yml up -d
+version: '3'
+services:
+  postgres-password-fix:
+    image: alpine:latest
+    container_name: postgres_password_fix
+    restart: "no"  # 只执行一次，不自动重启
+    depends_on:
+      vector_db:
+        condition: service_healthy
+    command: >
+      sh -c "
+        echo '等待 PostgreSQL 完全启动...' &&
+        sleep 5 &&
+        echo '正在重置 PostgreSQL 密码...' &&
+        apk add --no-cache postgresql-client &&
+        PGPASSWORD=postgres psql -h vector_db -U postgres -d postgres -c \"ALTER USER postgres WITH PASSWORD 'postgres';\" &&
+        echo '✅ 密码重置成功！' &&
+        exit 0
+      "
+    networks:
+      - my-network
+
