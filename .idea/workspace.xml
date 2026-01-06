@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07f3307b-2612-4cc2-9de3-da670ee6b52c" name="更改" comment="“Introduce AI service into this project,now it could respond in stream mode&quot;">
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/pgvector/sql/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/test/java/cn/bugstack/xfg/dev/tech/test/ragTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/test/resources/data/file.text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-api/src/main/java/cn/bugstack/xfg/dev/tech/api/IRAGService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-api/src/main/java/cn/bugstack/xfg/dev/tech/api/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-trigger/src/main/java/cn/bugstack/xfg/dev/tech/trigger/http/RAGController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/OllamaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/OllamaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-trigger/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,41 +66,41 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose-environment-aliyun.yml.ollama: Compose 部署.executor": "Run",
-    "Docker.docker-compose-environment.yml.ollama: Compose 部署.executor": "Run",
-    "JUnit.ragTest.chat.executor": "Run",
-    "JUnit.ragTest.executor": "Run",
-    "JUnit.ragTest.upload.executor": "Run",
-    "Maven.ai-rag-knowledge [clean].executor": "Run",
-    "Maven.ai-rag-knowledge [compile].executor": "Run",
-    "Maven.xfg-dev-tech-api [clean].executor": "Run",
-    "Maven.xfg-dev-tech-api [compile].executor": "Run",
-    "Maven.xfg-dev-tech-app [clean].executor": "Run",
-    "Maven.xfg-dev-tech-app [compile].executor": "Run",
-    "Maven.xfg-dev-tech-trigger [clean].executor": "Run",
-    "Maven.xfg-dev-tech-trigger [compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "5-rag",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/pipchief/KnowledgePlanet/ai-rag-knowledge/ai-rag-knowledge/docs/dev-ops/pgvector/sql",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/pipchief/KnowledgePlanet/ai-rag-knowledge/ai-rag-knowledge/xfg-dev-tech-trigger/src/main/java/cn/bugstack/Main.java",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose-environment-aliyun.yml.ollama: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose-environment.yml.ollama: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ragTest.chat.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ragTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ragTest.upload.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ai-rag-knowledge [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ai-rag-knowledge [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.xfg-dev-tech-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.xfg-dev-tech-api [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.xfg-dev-tech-app [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.xfg-dev-tech-app [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.xfg-dev-tech-trigger [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.xfg-dev-tech-trigger [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;5-rag&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pipchief/KnowledgePlanet/ai-rag-knowledge/ai-rag-knowledge/docs/dev-ops/pgvector/sql&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/pipchief/KnowledgePlanet/ai-rag-knowledge/ai-rag-knowledge/xfg-dev-tech-trigger/src/main/java/cn/bugstack/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs/dev-ops/pgvector/sql" />
@@ -237,7 +230,9 @@
       <updated>1766402583762</updated>
       <workItem from="1766402584894" duration="320000" />
       <workItem from="1766586383761" duration="4387000" />
-      <workItem from="1767283284134" duration="12495000" />
+      <workItem from="1767283284134" duration="15418000" />
+      <workItem from="1767591377153" duration="2419000" />
+      <workItem from="1767666596893" duration="3932000" />
     </task>
     <task id="LOCAL-00001" summary="“Introduce AI service into this project,now it could respond in stream mode&quot;">
       <option name="closed" value="true" />
